@@ -55,7 +55,6 @@ NEJ的dispatcher最重要的两个源文件:
   - /m/blog           // 博客管理模块, 博客顶级模块
     - /m/blog/list    // 博客列表模块, 对外可访问
     - /m/blog/tag     // 博客标签模块, 对外可访问
-  - /m/article        // 日志管理模块, 对外可访问
 ```
 
 ### 构建模块
@@ -263,8 +262,7 @@ NEJ.define([
             },
             title: {
                 '/m/blog/list': '博客列表',
-                '/m/blog/tag': '博客标签',
-                '/m/article': '文章管理'
+                '/m/blog/tag': '博客标签'
             },
             // 别名设置
             // 书写简单
@@ -274,9 +272,7 @@ NEJ.define([
 
                 'blog': '/m/blog',
                 'blog-list': '/m/blog/list',
-                'blog-tag': '/m/blog/tag',
-
-                'article': '/m/article'
+                'blog-tag': '/m/blog/tag'
             }
         },
 
@@ -292,9 +288,7 @@ NEJ.define([
             },
             '/m/blog': 'blog/index.html',
             '/m/blog/list': 'blog/list/index.html',
-            '/m/blog/tag': 'blog/tag/index.html',
-
-            '/m/article': 'article/index.html'
+            '/m/blog/tag': 'blog/tag/index.html'
         }
     });
 
@@ -307,7 +301,7 @@ NEJ.define([
 
 随着[Regular](regularjs.github.io)的广泛使用, 如何Regular和NEJ结合呢. 其实两者在概念上是有不少冲突的, 所以需要对双方都做一些割舍.
 
-我们新添加一个`/m/profile`模块, 首先构建模块, 这里都一样, 只是html模板换成regular的.
+我们新添加一个`/m/article`模块, 首先构建模块, 这里都一样, 只是html模板换成regular的.
 
 ```html
 <textarea name="txt" id="article-module">
