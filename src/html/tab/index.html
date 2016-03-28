@@ -1,0 +1,17 @@
+
+<meta charset="utf-8"/>
+
+<textarea name="txt" id="tab-module">
+    <div class="list-group" id="j-tab">
+    </div>
+</textarea>
+
+<textarea name="jst" id="jst-tab">
+    {list types as type}
+        <a href="#/m/${type.href}" class="list-group-item">${type.name}</a>
+    {/list}         
+</textarea>
+
+<!-- @TEMPLATE -->
+<textarea name="js" data-src="./index.js"></textarea>
+<!-- /@TEMPLATE -->

@@ -1,0 +1,16 @@
+
+<meta charset="utf-8"/>
+
+<textarea name="txt" id="article-module">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">{article.title}</h3>
+        </div>
+        <div class="panel-body">
+            {#include article.content}
+        </div>
+    </div>
+    <button class="btn btn-block btn-default" on-click={this.confirm()}>确定</button>
+</textarea>
+
+<textarea name="js" data-src="./index.js"></textarea>

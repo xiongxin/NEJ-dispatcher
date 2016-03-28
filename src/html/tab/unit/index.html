@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test tab module</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/bootstrap.css">
+</head>
+<body>
+    <div id="template-box" style="display:none;">
+        <textarea name="html" data-src="../index.html"></textarea>
+    </div>
+
+    <div id="module-id"></div>
+
+    <script src="/nej/src/define.js?pro=/src/javascript/"></script>
+    <script>
+    NEJ.define(['{lib}util/dispatcher/test.js'], function(_e) {
+        document.mbody = 'module-id';
+        _e._$testByTemplate('template-box')
+    });
+    </script>
+</body>
+</html>

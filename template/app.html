@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>NEJ dispatcher</title>
+    <link rel="stylesheet" type="text/css" href="/src/css/bootstrap.css">
+    <style type="text/css">
+    textarea[data-src] { display: none; }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <a class=navbar-brand href="/">DEMO</a>
+        </div>
+    </nav>
+    
+    <div id="template-box" style="display:none;"></div>
+    <div class="container">
+        <div class="row" id="module-box">
+        </div>
+    </div>
+
+    <!-- @MODULE -->
+    <textarea name="html" data-src="/src/html/m/index.html"></textarea>
+    <textarea name="html" data-src="/src/html/tab/index.html"></textarea>
+    <textarea name="html" data-src="/src/html/blog/index.html"></textarea>
+    <textarea name="html" data-src="/src/html/blog/tag/index.html"></textarea>
+    <textarea name="html" data-src="/src/html/blog/list/index.html"></textarea>
+    <textarea name="html" data-src="/src/html/article/index.html"></textarea> 
+    <!-- /@MODULE -->
+    
+    <!-- @VERSION -->
+    <script>location.config={root:'/src/html/'};</script>
+    <!-- @DEFINE -->
+    <script type="text/javascript" src="/nej/src/define.js?pro=/src/javascript/"></script>
+    <script type="text/javascript" src="/src/javascript/app.js"></script>
+</body>
+</html>
